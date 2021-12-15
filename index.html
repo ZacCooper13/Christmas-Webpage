@@ -1,0 +1,117 @@
+<div class="merry"</div>
+     <h1> Merry Christmas !</h1>
+
+<div class="treeCon">
+  <div class="boxTree">
+    <div class="treeAngle treeLv1"></div>
+    <div class="treeAngle treeLv2"></div>
+    <div class="treeAngle treeLv3"></div>
+    <div class="treeAngle treeLv4"></div>
+    <div class="treeLog"></div>
+  </div>
+  <div class="boxTree tree2">
+    <div class="treeAngle treeLv1"></div>
+    <div class="treeAngle treeLv2"></div>
+    <div class="treeAngle treeLv3"></div>
+    <div class="treeAngle treeLv4"></div>
+    <div class="treeLog"></div>
+  </div>
+  <img src="https://i.ibb.co/xFty4qn/Happy-Santa-Claus-is-smiling-and-waving-his-hand-on-a-white-background.jpg" alt="Happy-Santa-Claus-is-smiling-and-waving-his-hand-on-a-white-background" border="0" style="width: 300px; height: 300px;">
+  <style>
+      @import url('https://fonts.googleapis.com/css?family=Mountains+of+Christmas');
+
+body{
+ background-color: blue
+}
+.merry {
+	color: red;
+	font-family: 'Mountains of Christmas';
+	text-align: center;
+	grid-row: 1;
+	grid-column: 1/4;
+	align-self: center;
+	justify-self: center;
+	font-size: 2rem;
+  animation: rock2;
+    animation-iteration-count: infinite;
+    animation-duration: 1.2s;
+}
+@keyframes rock {
+  0% {
+    transform: rotate(-1deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(-1deg);
+  }
+}
+@keyframes rock2 {
+  0% {
+    transform: rotate(1deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(1deg);
+  }
+}
+.treeCon{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -25px;
+}
+.boxTree{
+    width: 300px;
+    height: 370px;
+}
+.tree2{
+    margin-left: 50px;
+}
+.treeAngle{
+    width: 0; 
+    height: 0; 
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 0 solid #044d14;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.treeLv1{
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 80px solid #044d14;
+    margin-top: 20px;
+}
+.treeLv2{
+    border-left: 90px solid transparent;
+    border-right: 90px solid transparent;
+    border-bottom: 110px solid #044d14;
+    margin-top: -50px;
+}
+.treeLv3{
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+    border-bottom: 140px solid #044d14;
+    margin-top: -70px;
+}
+.treeLv4{
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 170px solid #044d14;
+    margin-top: -90px;
+}
+.treeLog{
+    width: 60px;
+    height: 35px;
+    background-color: rgb(49, 21, 2);
+    margin-right: auto;
+    margin-left: auto;
+}
+  </style>
